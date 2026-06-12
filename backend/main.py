@@ -78,7 +78,7 @@ origins = [
 #   FastAPI 를 호출하는 주체가 브라우저가 아닌 서버이므로 CORS 제약이 없습니다.
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # [실습 1] Direct Fetch 허용 출처
+    allow_origins=origins, # [실습 1] Direct Fetch 허용 출처
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
